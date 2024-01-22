@@ -108,6 +108,12 @@
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="task1.cpp" />
+    <ClCompile Include="task2.cpp" />
+    <ClCompile Include="task3.cpp" />
+    <ClCompile Include="task4.cpp" />
+    <ClCompile Include="task5.cpp" />
+    <ClCompile Include="task6.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
