@@ -74,7 +74,7 @@ int main(){
         
         else if (task == 6) {
             system("cls");
-            cout << "Задача №6: " << endl;
+            cout << "Задача №6: Глупый бармен и алкоголь" << endl;
             task6();
             _getch();
             system("cls");
