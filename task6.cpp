@@ -1,16 +1,16 @@
-#include "pch.h"
+п»ї#include "pch.h"
 #include "iostream"
 using namespace std;
 
-/*Напишите программу для бармена, который не умеет считать.*/
+/*РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ Р±Р°СЂРјРµРЅР°, РєРѕС‚РѕСЂС‹Р№ РЅРµ СѓРјРµРµС‚ СЃС‡РёС‚Р°С‚СЊ.*/
 
 void task6() {
     int currentDay, currentMonth, currentYear, birthDay, birthMonth, birthYear;
 
-    cout << "Введите текущую дату (день месяц год): ";
+    cout << "Р’РІРµРґРёС‚Рµ С‚РµРєСѓС‰СѓСЋ РґР°С‚Сѓ (РґРµРЅСЊ РјРµСЃСЏС† РіРѕРґ): ";
     cin >> currentDay >> currentMonth >> currentYear;
 
-    cout << "Введите дату вашего рождения (день месяц год): ";
+    cout << "Р’РІРµРґРёС‚Рµ РґР°С‚Сѓ РІР°С€РµРіРѕ СЂРѕР¶РґРµРЅРёСЏ (РґРµРЅСЊ РјРµСЃСЏС† РіРѕРґ): ";
     cin >> birthDay >> birthMonth >> birthYear;
 
     int age = currentYear - birthYear;
@@ -19,10 +19,10 @@ void task6() {
     }
 
     if (age < 18) {
-        cout << "Нельзя" << endl;
+        cout << "РќРµР»СЊР·СЏ" << endl;
     } else if (age == 18) {
-        cout << "Приходите завтра, севодня Вы еще ребёнок" << endl;
+        cout << "РџСЂРёС…РѕРґРёС‚Рµ Р·Р°РІС‚СЂР°, СЃРµРІРѕРґРЅСЏ Р’С‹ РµС‰Рµ СЂРµР±С‘РЅРѕРє" << endl;
     } else {
-        cout << "Можно" << endl;
+        cout << "РњРѕР¶РЅРѕ" << endl;
     }
 }

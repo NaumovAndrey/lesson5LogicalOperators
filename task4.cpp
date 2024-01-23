@@ -1,18 +1,18 @@
-#include "pch.h"
+п»ї#include "pch.h"
 #include "iostream"
 
 using namespace std;
 
-/*Напишите программу для банкомата. В банкомате есть купюры достоинством 100, 200, 500, 1 000, 2 000 и 5 000 рублей.*/
+/*РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ РґР»СЏ Р±Р°РЅРєРѕРјР°С‚Р°. Р’ Р±Р°РЅРєРѕРјР°С‚Рµ РµСЃС‚СЊ РєСѓРїСЋСЂС‹ РґРѕСЃС‚РѕРёРЅСЃС‚РІРѕРј 100, 200, 500, 1 000, 2 000 Рё 5 000 СЂСѓР±Р»РµР№.*/
 
 void task4() {
 	int withdrawalAmount;
 
-	cout << "Введите сумму: ";
+	cout << "Р’РІРµРґРёС‚Рµ СЃСѓРјРјСѓ: ";
 	cin >> withdrawalAmount;
 
-	if (withdrawalAmount % 100 != 0) cout << "выдать ровно " << withdrawalAmount << " рублей невозможно";
-	else if (withdrawalAmount > 15000) cout << "Невозможно выдать более 150000 рублей за раз";
+	if (withdrawalAmount % 100 != 0) cout << "РІС‹РґР°С‚СЊ СЂРѕРІРЅРѕ " << withdrawalAmount << " СЂСѓР±Р»РµР№ РЅРµРІРѕР·РјРѕР¶РЅРѕ";
+	else if (withdrawalAmount > 15000) cout << "РќРµРІРѕР·РјРѕР¶РЅРѕ РІС‹РґР°С‚СЊ Р±РѕР»РµРµ 150000 СЂСѓР±Р»РµР№ Р·Р° СЂР°Р·";
 
 	int n5000 = withdrawalAmount / 5000;
 	withdrawalAmount %= 5000;
@@ -32,14 +32,14 @@ void task4() {
 	int n100 = withdrawalAmount / 100;
 
 	string stroka;
-	if (n5000 != 0) stroka += "купюр по 5000: " + to_string(n5000) + ", ";
-	if (n2000 != 0) stroka += "купюр по 2000: " + to_string(n2000) + ", ";
-	if (n1000 != 0) stroka += "купюр по 1000: " + to_string(n1000) + ", ";
-	if (n500 != 0) stroka += "купюр по 500: " + to_string(n500) + ", ";
-	if (n200 != 0) stroka += "купюр по 200: " + to_string(n200) + ", ";
-	if (n100 != 0) stroka += "купюр по 100: " + to_string(n100) + ", ";
+	if (n5000 != 0) stroka += "РєСѓРїСЋСЂ РїРѕ 5000: " + to_string(n5000) + ", ";
+	if (n2000 != 0) stroka += "РєСѓРїСЋСЂ РїРѕ 2000: " + to_string(n2000) + ", ";
+	if (n1000 != 0) stroka += "РєСѓРїСЋСЂ РїРѕ 1000: " + to_string(n1000) + ", ";
+	if (n500 != 0) stroka += "РєСѓРїСЋСЂ РїРѕ 500: " + to_string(n500) + ", ";
+	if (n200 != 0) stroka += "РєСѓРїСЋСЂ РїРѕ 200: " + to_string(n200) + ", ";
+	if (n100 != 0) stroka += "РєСѓРїСЋСЂ РїРѕ 100: " + to_string(n100) + ", ";
 
 	if (!stroka.empty()) stroka.resize(stroka.size()-2);
 
-	cout << "Банковат выдал: " << stroka;
+	cout << "Р‘Р°РЅРєРѕРІР°С‚ РІС‹РґР°Р»: " << stroka;
 }
